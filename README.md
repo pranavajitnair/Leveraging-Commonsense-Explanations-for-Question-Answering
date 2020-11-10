@@ -13,7 +13,7 @@ Another dataset used here is the abductive commonsense reasoning dataset [ART](h
 ## Target task training
 We use the above pretrained models to generate explanations for our target task [ReColr](https://openreview.net/pdf?id=HJgJtT4tvB). Commonsense reading comprehension dataset. Given context and question the task is to select the most plausible option. Answering requires commonsense. The contexts are borrowed from previous year GMAT and LCAT papers. Four options are presented to the system for choosing the most plausible one. The task is challegning even for humans( accuracy=63%). The dataset is small moreover the length of the answers are long making the task even more difficult.
 
-We use ALBERT base for all our experiments on ReColr. A significant performance improvement is observed when the explanations are provided to the model along with the context and the question.
+I use ALBERT base for all our experiments on ReColr. A significant performance improvement is observed when the explanations are provided to the model along with the context and the question.
 
 |         | Baseline| Pretrainned on COS-E to generate explanations without answers| Pretrained on COS-E to generate explanations with answers| Pretrained on ART to generate explanations|
 |---------|---------|--------------------------------------------------------------|----------------------------------------------------------|------------------------------------------|
